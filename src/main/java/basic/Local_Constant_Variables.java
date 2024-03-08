@@ -42,9 +42,11 @@ public class Local_Constant_Variables {
 	public void User()
 	{
 		final int USER_ID = 9090;
+		final int a;
 		System.out.println(USER_ID);
 		//Invalid
 			//USER_ID=9091;
+			//System.out.println(a); - Constant variable cannot be left unassigned
 	}
 
 }

@@ -32,6 +32,9 @@ public class HandlingInputs {
 		boolean Text_Enabled = driver.findElement(By.id("noEdit")).isEnabled();
 		System.out.println(Text_Enabled);
 		
+//Quit
+		driver.quit();
+		
 	}
 
 }

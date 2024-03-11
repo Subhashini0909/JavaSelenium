@@ -3,7 +3,7 @@ package selenium;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Navigation {
+public class Navigations {
 
 	public static void main(String[] args) 
 	{
@@ -28,6 +28,10 @@ public class Navigation {
 //Refresh
 		driver.navigate().refresh();
 		driver.quit();
+		
+//USING NAVIGATION METHODS WITH OBJECT
+		Navigations nav = driver.navigate();
+		
 	}
 
 }

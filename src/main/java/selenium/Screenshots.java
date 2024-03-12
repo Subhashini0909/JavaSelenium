@@ -19,6 +19,7 @@ public class Screenshots {
 //TO TAKE SCREENSHOT OF THE SCREEN
 	//Capture a screenshot as a File
 		File img_src = driver.getScreenshotAs(OutputType.FILE);
+				//The OutputType.FILE parameter specifies that the screenshot should be returned as a File object.
 		
 	//Specify the destination file path and name
 		File dest = new File("./Screenshots/img.png");
@@ -40,6 +41,7 @@ public class Screenshots {
 		
 		driver.quit();
 
+		//NOTE : CANNOT TAKE SCREENSHOTS IN ALERTS
 	}
 
 }

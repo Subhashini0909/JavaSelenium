@@ -1,6 +1,7 @@
 package selenium;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver.Navigation;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Navigations {
@@ -30,7 +31,8 @@ public class Navigations {
 		driver.quit();
 		
 //USING NAVIGATION METHODS WITH OBJECT
-		Navigations nav = driver.navigate();
+		Navigation nav = driver.navigate();
+		nav.to("https://letcode.in/buttons");
 		
 	}
 

@@ -25,7 +25,7 @@ public class RightClick {
 //Alert
 		Alert simple = driver.switchTo().alert();
 		simple.accept();
-
+		
 	}
 
 }

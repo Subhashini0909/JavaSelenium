@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG_Basic.AlwaysRun">
+      <class name="testNG_Basic.DataProvider_Indices_Script">
         <methods>
-          <include name="signUp"/>
+          <include name="Signin" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testNG_Basic.AlwaysRun -->
+      </class> <!-- testNG_Basic.DataProvider_Indices_Script -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

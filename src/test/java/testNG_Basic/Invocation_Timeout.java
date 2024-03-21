@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Invocation_Timeout {
 	
-	@Test(invocationCount = 1, invocationTimeOut = 2000)
+	@Test(invocationCount = 3, invocationTimeOut = 10000)
 	public void Invocating()
 	{
 		//Launch Chrome

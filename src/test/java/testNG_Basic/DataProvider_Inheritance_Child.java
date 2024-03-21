@@ -26,6 +26,8 @@ public class DataProvider_Inheritance_Child extends DataProvider_Inheritance_Par
 			
 			driver.findElement(By.xpath("//button[@class='button is-primary' and text()='LOGIN']")).click();
 	
+			//driver.findElement(By.xpath("//h1[text()=\" LetCode with Koushik\"]")).isDisplayed();
+			
 			driver.quit();
 
 }

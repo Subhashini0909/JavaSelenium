@@ -61,8 +61,7 @@ public class ExplicityWait {
 		driver.findElement(By.xpath("//a[@class='_3490ry' and text()= 'Mattresses']")).click();
 		String Title_Home = driver.getTitle();
 		System.out.println(Title_Home);
-		
-		//
+
 		driver.quit();
 //
 

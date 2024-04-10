@@ -16,34 +16,33 @@ public class ExplicityWait {
 
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-//		driver.get("https://letcode.in/waits");
-//		
-//		WebElement alert_loc = driver.findElement(By.id("accept"));
-//		alert_loc.click();
-//		
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		driver.get("https://letcode.in/waits");
+		
+		WebElement alert_loc = driver.findElement(By.id("accept"));
+		alert_loc.click();
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 //alertIsPresent		
-		//wait.until(ExpectedConditions.alertIsPresent()).accept();
-//		Alert waiting = wait.until(ExpectedConditions.alertIsPresent());
-//			//waiting.accept();
-//			driver.switchTo().alert().accept();
-//			
-//		
-//		driver.navigate().to("https://letcode.in/signin");
-//		driver.findElement(By.name("email")).sendKeys("worthyweapon@gmail.com");
-//		driver.findElement(By.name("password")).sendKeys("Subha@0909");
-//		driver.findElement(By.xpath("//button[@class='button is-primary' and text()='LOGIN']")).click();
+		wait.until(ExpectedConditions.alertIsPresent()).accept();
+		Alert waiting = wait.until(ExpectedConditions.alertIsPresent());
+			//waiting.accept();
+			driver.switchTo().alert().accept();
+			
+		driver.navigate().to("https://letcode.in/signin");
+		driver.findElement(By.name("email")).sendKeys("worthyweapon@gmail.com");
+		driver.findElement(By.name("password")).sendKeys("Subha@0909");
+		driver.findElement(By.xpath("//button[@class='button is-primary' and text()='LOGIN']")).click();
 
 //visibilityOf and invisibilityOf
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-//		WebElement toast = driver.findElement(By.xpath("//div[@role='alertdialog']"));
-//		wait.until(ExpectedConditions.visibilityOf(toast));
-//		System.out.println(toast.getText());
-//		wait.until(ExpectedConditions.invisibilityOf(toast));
-//		
-//		driver.findElement(By.partialLinkText("Sign out")).click();
-//		
-//		System.out.println("Clicked on sign out");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		WebElement toast = driver.findElement(By.xpath("//div[@role='alertdialog']"));
+		wait.until(ExpectedConditions.visibilityOf(toast));
+		System.out.println(toast.getText());
+		wait.until(ExpectedConditions.invisibilityOf(toast));
+		
+		driver.findElement(By.partialLinkText("Sign out")).click();
+		
+		System.out.println("Clicked on sign out");
 		
 		
 		
